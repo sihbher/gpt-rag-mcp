@@ -110,7 +110,7 @@ function Get-ConfigValue {
             --key $Key `
             --label $label `
             --auth-mode login `
-            --endpoint "https://appcs-$($env:RESOURCE_TOKEN).azconfig.io" `
+            --endpoint "https://$configName.azconfig.io" `
             --query value -o tsv 2>&1
         $exitCode = $LASTEXITCODE
     } catch {
